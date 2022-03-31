@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="content-main">
+        <img src="{{img}}" alt="img">
+    </div>
+    <p class="descr"> {{description}}</p>
+
+    <div class="add_comment">
+        {{#each comment}}
+
+        <span>{{#if avatar}} <img src="{{avatar}}" alt="avatar"> {{/if}}</span>
+      <span class="userName"> {{user}} :</span>
+      <p class="userComment">
+        {{comment}}
+        </p>
+        {{/each}}
+    </div>
+
+  {{#if isAuth}}
+    <div class="discussion">
+        <form action="/books/discussion{{id}}" method="post">
+        <textarea name="comment"  cols="20" rows="5"></textarea>
+        <button type="submit" class="btn btn-primary teal darken-4"> Комментировать</button>
+        </form>
+    </div>
+  {{else}}
+    <div class="discussion">
+        <textarea name="comment"  cols="20" rows="5"></textarea>
+        <h6 style="text-align: center; margin-bottom: 2rem">Оставить свои комментарии могут только авторизованные пользователи</h6>
+        <a href="/auth/login" class="btn btn-primary teal darken-4" style="margin-bottom: 5rem; width: 10rem; height: 3rem; margin-left:40%">Войти</a>
+    </div>
+    {{/if}}
+</div>

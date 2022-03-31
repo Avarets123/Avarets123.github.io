@@ -1,0 +1,58 @@
+  <nav>
+    <div class="nav-wrapper light-blue darken-4">
+      <a href="/" class="brand-logo"><img src="http://njnj.ru/pix/voc/book.gif" alt="book" class="logoBook"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      {{#if isAuth}}
+        {{#if isBooks}}
+          <li class="active"><a href="/books">Библиотека</a></li>
+        {{else}}
+          <li ><a href="/books">Библиотека</a></li>
+        {{/if}}
+
+        {{#if isBookshelf}}
+          <li class="active" ><a href="/bookshelf">Моя полка</a></li>
+        {{else}}
+          <li><a href="/bookshelf">Моя полка</a></li>
+        {{/if}}
+
+        {{#if isProfile}}
+          <li class="active" ><a href="/profile"> Профиль</a></li>
+        {{else}}
+          <li><a href="/profile"> Профиль</a></li>
+        {{/if}}
+
+      {{else}}
+        {{#if isBooks}}
+          <li class="active"><a href="/books">Библиотека</a></li>
+        {{else}}
+          <li ><a href="/books">Библиотека</a></li>
+        {{/if}}
+
+ 
+
+        {{#if isLogin}}
+          <li class="active"><a href="/auth/login">Войти</a></li>
+
+        {{else}}
+         <li><a href="/auth/login">Войти</a></li>
+        {{/if}}
+
+        {{#if isRegist}}
+          <li class="active"><a href="/auth/register">Регистрация</a></li>
+        {{else}}
+          <li><a href="/auth/register">Регистрация</a></li>
+        {{/if}}
+      {{/if}}
+
+
+
+
+
+        {{#if isAuth}}
+          <li><a href="/auth/logout">Выйти</a></li>
+        {{/if}}
+
+      </ul>
+    </div>
+  </nav>

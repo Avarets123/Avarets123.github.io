@@ -1,0 +1,45 @@
+<h2>Здесь вы можете найти отзыв на интересующую вас книгу</h2>
+<h5>Также вы можете  подделится и своим отзывом.</h5>
+
+
+<div class="container">
+
+{{#each books}}
+<div class="card" style="width: 18rem;">
+  <img src="{{img}}" class="card-img-top" alt="book-img">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{description}}</p>
+    <a href="/books/discussion{{id}}" class="btn btn-primary">Обсуждение</a>
+    {{#if @root.isAuth}}
+    <a href="/books/delete{{id}}" class="btn red">Удалить</a>
+    {{else}}
+    {{/if}}
+  </div>
+</div>
+{{/each}}
+
+
+{{#if isAuth}}
+<div class="card" style="width: 18rem;">
+  <img src="https://rebrainme.com/blog/wp-content/uploads/2020/05/devops_books.jpg" class="card-img-top" alt="book-img">
+  <div class="card-body">
+    <h4 class="card-title">Добавление книги</h4>
+    <p class="card-text">здесь вы можете добавить книгу, которую  не нашли в библиотеке.</p>
+    <a href="/books/add" class="btn btn-primary">Добавить книгу</a>
+  </div>
+</div>
+</div>
+
+{{else}}
+<div class="card" style="width: 18rem;">
+  <img src="https://rebrainme.com/blog/wp-content/uploads/2020/05/devops_books.jpg" class="card-img-top" alt="book-img">
+  <div class="card-body">
+    <h4 class="card-title">Добавление книги</h4>
+    <p class="card-text">здесь вы можете добавить книгу, которую  не нашли в библиотеке. Для этого войдите в свой аккаунт</p>
+    <a href="/auth/login" class="btn btn-primary">Войти</a>
+  </div>
+</div>
+</div>
+
+{{/if}}

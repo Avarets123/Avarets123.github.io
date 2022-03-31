@@ -1,0 +1,101 @@
+.logoBook {
+    width: 5rem;
+    height: 4rem;
+}
+
+.nav-wrapper {
+    background: rgb(15, 48, 9);
+}
+
+#nav-mobile li:hover {
+    color: blue;
+}
+
+.card {
+    margin-right: 3rem;
+    margin-top: 5rem;
+    width: 22rem;
+    display: inline-block;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+.addForm {
+    margin-top: 3rem;
+}
+
+.content-main {
+    margin-left: 30%;
+    margin-top: 3rem;
+    
+}
+
+.content-main img {
+    width: 483px;
+    height: 580px;
+}
+
+.descr {
+    margin-top: 1rem;
+    color: rgb(117, 96, 64);
+    font-size: 1.5rem;
+}
+
+.discussion {
+    margin-top: 2.5rem;
+}
+
+.discussion textarea {
+    resize: none;
+    height: 8rem;
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.discussion button {
+    margin-left: 40%;
+    margin-bottom: 5rem;
+    height: 4rem;
+}
+
+
+.login {
+    font-size: 1rem;
+    color: blue;
+}
+
+.readbook {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.readbook h5 {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.readbook iframe {
+    width: 50%;
+    height: 30rem;
+    margin-left: 25%;
+}
+
+.add_comment {
+    min-height: 20rem;
+    margin-top: 2rem;
+    background: white;
+    padding: 2rem;
+}
+
+
+.add_comment span {
+    display: inline-block;
+    padding: 0.5rem;
+    border: 3px solid brown;
+    border-radius: 20%;
+
+}

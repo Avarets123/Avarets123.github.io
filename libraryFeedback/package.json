@@ -1,0 +1,31 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "library book",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "book",
+    "library"
+  ],
+  "author": "Osman <avarets1234@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "compression": "^1.7.4",
+    "connect-mongodb-session": "^3.1.1",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "helmet": "^5.0.2",
+    "mongoose": "^6.2.7",
+    "nodemailer": "^6.7.3",
+    "uniqid": "^5.4.0"
+  }
+}

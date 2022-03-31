@@ -1,0 +1,30 @@
+
+<div class="container">
+  <h1>Регистрация </h1>
+
+  <p class="alert">{{error}}</p>
+
+
+  <div class="row">
+    <form action="/auth/register" method="post">
+      <div class="mb-9 ">
+        <label for="email" class="login">Введите ваш email</label>
+        <input type="email" name="email" class="form-control" id="remail" value="{{data.email}}">
+      </div>
+      <div class="mb-9 ">
+        <label for="name" class="login">Введите ваше имя</label>
+        <input type="text" name="name" class="form-control" id="rname" value="{{data.name}}">
+      </div>  
+      <div class="mb-3">
+        <label for="password" class="login">Введите пароль</label>
+        <input type="password" class="form-control" id="rpassword" name="password">
+      </div>
+      <div class="mb-3">
+        <label for="confirm" class="login">Введите пароль еще раз</label>
+        <input type="password" class="form-control" id="confirm" name="confirm">
+      </div>
+      
+      <button type="submit" class="btn  green">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>

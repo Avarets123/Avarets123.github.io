@@ -1,0 +1,18 @@
+<h3>Добавление книги</h3>
+{{#if error}}
+<p class="alert">{{error}}</p>
+{{/if}}
+
+
+<form action="/books/add" method="post" class="addForm">
+      <input  id="first_name2" type="text" name="name" class="validate" value="{{data.name}}">
+      <label class="active" for="first_name2">Название книги</label>
+
+      <input  id="first_name2" type="text" name="img" class="validate" value="{{data.img}}">
+      <label class="active" for="first_name2">Ссылка на картинку</label>
+
+        <input  id="first_name2" type="text" name="description" class="validate" value="{{data.description}}">
+      <label class="active" for="first_name2">Описание книги</label>
+
+    <button class="btn" style="margin-top: 3rem;"> Добавить</button>
+</form>
