@@ -3,7 +3,7 @@ HTML и CSS
 https://avarets123.github.io/UBER/dist/src/  
 https://avarets123.github.io/heart/  
   
-  Применение нативного JS
+  Применение нативного JS  
   https://avarets123.github.io/art/index.html
   
 Node.js, Express, MongoDB, Mongoose, Handlebars и тд.  
