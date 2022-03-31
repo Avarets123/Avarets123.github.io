@@ -18,7 +18,6 @@ const keys = require('./keys');
 const errorPage = require('./middleware/error');
 const profPage = require('./routes/profile');
 const fileMiddleware = require('./middleware/file');
-const helmet = require('helmet');
 const compression = require('compression');
 
 
@@ -58,7 +57,6 @@ app.use(session({
     store: store
 }));
 app.use(fileMiddleware.single('avatar'));
-app.use(helmet());
 app.use(compression());
 // app.use(csurf());
 app.use(flash());
