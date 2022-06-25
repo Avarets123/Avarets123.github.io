@@ -1,4 +1,4 @@
-# Ссылки к моим проектам :  
+# Ссылки к моим проектам (устарело) :  
 HTML и CSS  
 https://avarets123.github.io/UBER/dist/src/  
 https://avarets123.github.io/heart/  
